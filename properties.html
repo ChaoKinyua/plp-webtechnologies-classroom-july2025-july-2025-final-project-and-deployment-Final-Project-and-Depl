@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Properties - PropertyPro Management</title>
+    <meta name="description" content="Browse our available rental properties including apartments, condos, and homes managed by PropertyPro Management.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">PropertyPro</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="properties.html" class="nav-link active">Properties</a>
+                </li>
+                <li class="nav-item">
+                    <a href="services.html" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Available Properties</h1>
+            <p>Find your perfect rental from our curated selection of quality properties</p>
+        </div>
+    </section>
+
+    <!-- Search and Filter Section -->
+    <section class="property-filters">
+        <div class="container">
+            <div class="filter-controls">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Search properties...">
+                    <button id="searchBtn">🔍</button>
+                </div>
+                
+                <div class="filter-options">
+                    <select id="typeFilter">
+                        <option value="">All Types</option>
+                        <option value="apartment">Apartment</option>
+                        <option value="house">House</option>
+                        <option value="condo">Condo</option>
+                        <option value="studio">Studio</option>
+                    </select>
+                    
+                    <select id="bedroomFilter">
+                        <option value="">All Bedrooms</option>
+                        <option value="studio">Studio</option>
+                        <option value="1">1 Bedroom</option>
+                        <option value="2">2 Bedrooms</option>
+                        <option value="3">3 Bedrooms</option>
+                        <option value="4+">4+ Bedrooms</option>
+                    </select>
+                    
+                    <select id="priceFilter">
+                        <option value="">All Prices</option>
+                        <option value="0-1500">Under $1,500</option>
+                        <option value="1500-2500">$1,500 - $2,500</option>
+                        <option value="2500-3500">$2,500 - $3,500</option>
+                        <option value="3500+">$3,500+</option>
+                    </select>
+                    
+                    <button id="resetFilters" class="btn btn-secondary">Reset</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Properties Grid -->
+    <section class="properties-section">
+        <div class="container">
+            <div id="propertyCount" class="property-count">
+                <span id="countText">Showing 12 properties</span>
+            </div>
+            
+            <div id="propertiesGrid" class="properties-grid">
+                <!-- Properties will be dynamically loaded here -->
+            </div>
+            
+            <div id="noResults" class="no-results" style="display: none;">
+                <h3>No properties found</h3>
+                <p>Try adjusting your search criteria or filters</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Property Modal -->
+    <div id="propertyModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div id="modalContent">
+                <!-- Modal content will be dynamically loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>PropertyPro Management</h3>
+                    <p>Your trusted partner in professional property management. We make property ownership simple and profitable.</p>
+                    <div class="social-links">
+                        <a href="#">📘 Facebook</a>
+                        <a href="#">📸 Instagram</a>
+                        <a href="#">💼 LinkedIn</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="properties.html">Properties</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Property Management</a></li>
+                        <li><a href="services.html">Tenant Screening</a></li>
+                        <li><a href="services.html">Maintenance</a></li>
+                        <li><a href="services.html">Rent Collection</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p>📞 (555) 123-4567</p>
+                        <p>✉️ info@propertypro.com</p>
+                        <p>📍 123 Business St, Suite 100<br>City, State 12345</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 PropertyPro Management. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/properties.js"></script>
+</body>
+</html>

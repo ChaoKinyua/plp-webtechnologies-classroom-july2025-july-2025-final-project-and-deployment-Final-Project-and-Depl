@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - PropertyPro Management</title>
+    <meta name="description" content="Get in touch with PropertyPro Management for professional property management services. Contact us today for a free consultation.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">PropertyPro</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="properties.html" class="nav-link">Properties</a>
+                </li>
+                <li class="nav-item">
+                    <a href="services.html" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link active">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Contact PropertyPro Management</h1>
+            <p>Ready to get started? Let's discuss how we can help with your property management needs</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <!-- Contact Form -->
+                <div class="contact-form-container" data-aos="fade-right">
+                    <h2>Get a Free Consultation</h2>
+                    <p>Fill out the form below and we'll contact you within 24 hours to discuss your property management needs.</p>
+                    
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                                <span class="error-message" id="firstNameError"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                                <span class="error-message" id="lastNameError"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                                <span class="error-message" id="emailError"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                                <span class="error-message" id="phoneError"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="propertyAddress">Property Address</label>
+                            <input type="text" id="propertyAddress" name="propertyAddress" placeholder="123 Main St, City, State 12345">
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="propertyType">Property Type</label>
+                                <select id="propertyType" name="propertyType">
+                                    <option value="">Select Type</option>
+                                    <option value="single-family">Single Family Home</option>
+                                    <option value="condo">Condo</option>
+                                    <option value="apartment">Apartment</option>
+                                    <option value="duplex">Duplex</option>
+                                    <option value="multi-family">Multi-Family</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="serviceType">Service Needed</label>
+                                <select id="serviceType" name="serviceType">
+                                    <option value="">Select Service</option>
+                                    <option value="full-management">Full Property Management</option>
+                                    <option value="tenant-placement">Tenant Placement Only</option>
+                                    <option value="maintenance">Maintenance Services</option>
+                                    <option value="consultation">Consultation</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell us about your property management needs..." required></textarea>
+                            <span class="error-message" id="messageError"></span>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <span class="checkmark"></span>
+                                I'd like to receive property management tips and updates via email
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        
+                        <div id="formMessage" class="form-message"></div>
+                    </form>
+                </div>
+                
+                <!-- Contact Information -->
+                <div class="contact-info-container" data-aos="fade-left">
+                    <div class="contact-info-card">
+                        <h3>Get In Touch</h3>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <div class="contact-icon">📞</div>
+                                <div class="contact-text">
+                                    <h4>Phone</h4>
+                                    <p>(555) 123-4567</p>
+                                    <p class="contact-note">Mon-Fri 8AM-6PM</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">✉️</div>
+                                <div class="contact-text">
+                                    <h4>Email</h4>
+                                    <p>info@propertypro.com</p>
+                                    <p class="contact-note">We respond within 24 hours</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">📍</div>
+                                <div class="contact-text">
+                                    <h4>Office</h4>
+                                    <p>123 Business Street<br>Suite 100<br>City, State 12345</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">⏰</div>
+                                <div class="contact-text">
+                                    <h4>Emergency Line</h4>
+                                    <p>(555) 123-HELP (4357)</p>
+                                    <p class="contact-note">24/7 for tenant emergencies</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="office-hours-card">
+                        <h3>Office Hours</h3>
+                        <div class="hours-list">
+                            <div class="hours-item">
+                                <span>Monday - Friday</span>
+                                <span>8:00 AM - 6:00 PM</span>
+                            </div>
+                            <div class="hours-item">
+                                <span>Saturday</span>
+                                <span>9:00 AM - 4:00 PM</span>
+                            </div>
+                            <div class="hours-item">
+                                <span>Sunday</span>
+                                <span>Closed</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2>Visit Our Office</h2>
+            <div class="map-container">
+                <div class="map-placeholder">
+                    <div class="map-content">
+                        <h3>📍 PropertyPro Management Office</h3>
+                        <p>123 Business Street, Suite 100<br>City, State 12345</p>
+                        <p>Conveniently located in the downtown business district with ample parking available.</p>
+                        <a href="#" class="btn btn-secondary">Get Directions</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>PropertyPro Management</h3>
+                    <p>Your trusted partner in professional property management. We make property ownership simple and profitable.</p>
+                    <div class="social-links">
+                        <a href="#">📘 Facebook</a>
+                        <a href="#">📸 Instagram</a>
+                        <a href="#">💼 LinkedIn</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="properties.html">Properties</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Property Management</a></li>
+                        <li><a href="services.html">Tenant Screening</a></li>
+                        <li><a href="services.html">Maintenance</a></li>
+                        <li><a href="services.html">Rent Collection</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p>📞 (555) 123-4567</p>
+                        <p>✉️ info@propertypro.com</p>
+                        <p>📍 123 Business St, Suite 100<br>City, State 12345</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 PropertyPro Management. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>
