@@ -13,7 +13,7 @@ PropertyPro Management is a comprehensive website for a fictional property manag
 
 ## 🌟 Live Demo
 
-Visit the live website: [PropertyPro Management](https://plp-webtechnologies-classroom-july2-omega-five.vercel.app/)
+Visit the live website: [https://plp-webtechnologies-classroom-july2-omega-five.vercel.app/]
 
 ## 📁 Project Structure
 
